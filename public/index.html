@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="flex justify-center items-center flex-col">
+    <main>
+        <h1 class="titlePrincipal mt-4 text-center">Animaciones CSS</h1>
+        <h2 class="text-center">Transform</h2>
+        <section class="flex justify-center items-center flex-wrap gap-4">
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Traslate</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transform exampleTraslate"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .traslate:hover { <br><br>
+                            &nbsp;&nbsp;&nbsp;transform: translateX(120px); <br><br>
+                          }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Desplaza un elemento en el eje X y/o Y.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Scale</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transform exampleScale"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .scale:active { <br><br>
+                                &nbsp;&nbsp;&nbsp;transform: scaleX(3) scaleY(3); <br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Cambia el tamaño de un elemento en los ejes X y/o Y.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Rotate</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transform exampleRotate"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .rotate:active {<br><br>
+                                &nbsp;&nbsp;&nbsp;transform: rotate(360deg);<br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Rota un elemento alrededor de un punto de origen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Skew</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transform exampleSkew"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .skew:active {<br><br>
+                                &nbsp;&nbsp;&nbsp;transform: skewX(30deg) &nbsp;&nbsp;&nbsp;skewY(90deg); <br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Inclina un elemento en el eje X y/o Y.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Matrix</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <!-- <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transform exampleMatrix"></div>
+                    </div> -->
+                    <!-- <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            
+                        </p>
+                    </section> -->
+                    <div class="characteristics mt-4">
+                        <p>Es una forma más avanzada de aplicar transformaciones usando una matriz 2x3. Combina todas las transformaciones anteriores en una sola.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Perspective</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transform examplePerspective"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            &nbsp;.perspective:active { <br><br>
+                                &nbsp;&nbsp;&nbsp;transform: perspective(500px) &nbsp;&nbsp;&nbsp;rotateX(180deg);<br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Se utiliza principalmente con transformaciones 3D. Define la perspectiva desde la cual se ve un elemento 3D.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <h2 class="text-center">Transition</h2>
+        <section class="flex justify-center items-center flex-wrap gap-4">
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Transition-property</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transitionProperty"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .transitionProperty {<br><br>
+                                &nbsp;&nbsp;&nbsp;transition-property: width;<br><br>
+                            }<br><br>
+                            .transitionProperty:active {<br><br>
+                                &nbsp;&nbsp;&nbsp;width: 120px;<br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Especifica la propiedad que se va a moficiar por ejemplo.. <br>color <br class="mt-4">width <br>height <br>etc</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Transition-duration</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transitionDuration"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .transitionDuration {<br><br>
+                                &nbsp;&nbsp;&nbsp;transition-property: width;<br>
+                                &nbsp;&nbsp;&nbsp;transition-duration: 3s;<br><br>
+                            } <br><br>
+                            .transitionDuration:active { <br><br>
+                                &nbsp;&nbsp;&nbsp;width: 200px; <br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Indica cuanto tiempo durara la animacion</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Transition-timing-function</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transitionTimimng"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .transitionTimimng {<br><br>
+                                &nbsp;&nbsp;&nbsp;transition-property: width;<br>
+                                &nbsp;&nbsp;&nbsp;transition-duration: 3s;<br>
+                                &nbsp;&nbsp;&nbsp;transition-timing-function: ease;<br><br>
+                            }<br><br>
+                            .transitionTimimng:active {<br><br>
+                                &nbsp;&nbsp;&nbsp;width: 200px;<br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Establece como se animara la propiedad a lo largo de la duracion ejemplo. <br><br><span class="">
+                            <ul class="text-left">
+                                <li>
+                                    <span class="font-bold">linear:</span> Velocidad constante.
+                                </li>
+                                <li>
+                                    <span class="font-bold">ease:</span> Comienza lentamente, luego rapidamente y finaliza lentamente.
+                                </li>
+                                <li>
+                                    <span class="font-bold">ease-in:</span> Comienza lentamente.
+                                </li>
+                                <li>
+                                    <span class="font-bold">ease-out:</span> Finaliza lentamente.
+                                </li>
+                                <li>
+                                    <span class="font-bold">ease-in-out:</span> Comienza y finaliza lentamente.
+                                </li>
+                            </ul>
+                        </span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Transition-delay</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transitionDelay"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .transitionDelay { <br><br>
+                                &nbsp;&nbsp;&nbsp;transition-property: width;<br>
+                                &nbsp;&nbsp;&nbsp;transition-duration: 3s;<br>
+                                &nbsp;&nbsp;&nbsp;transition-timing-function: ease;<br>
+                                &nbsp;&nbsp;&nbsp;transition-delay: 2s;<br><br>
+                            }<br><br>
+                            .transitionDelay:active {<br><br>
+                                &nbsp;&nbsp;&nbsp;width: 200px;<br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Establece un tiempo de espera antes de que comience la animacion.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="containerBasic flex flex-col justify-center text-center">
+                <p>Transition-All</p>
+                <div class="containerTraslate mt-4 mb-4">
+                    <div class="content flex justify-center items-center">
+                        <div class="exampleContainer-transitionAll"></div>
+                    </div>
+                    <p class="pt-4 pb-4">Codigo de ejemplo</p>
+                    <section class="codigo text-left flex justify-center flex-col items-center">
+                        <p class="pt-3 pb-3">
+                            .transitionAll {<br><br>
+                                &nbsp;&nbsp;&nbsp;transition: width 3s ease 2s;<br><br>
+                            }<br><br>
+                            .transitionAll:active {<br><br>
+                                &nbsp;&nbsp;&nbsp;width: 200px;<br><br>
+                            }
+                        </p>
+                    </section>
+                    <div class="characteristics mt-4">
+                        <p>Combinando todo esto nos sale como resultado esto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+</body>
+</html>

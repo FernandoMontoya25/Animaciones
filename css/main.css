@@ -1,0 +1,152 @@
+@import url(./reset.css);
+body {
+  font-family: "Playpen Sans", cursive;
+  background: #16222A; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.titlePrincipal {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2::before {
+  content: "-- ";
+}
+
+h2::after {
+  content: " --";
+}
+
+.containerBasic {
+  width: 360px;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 2px 2px 5px 0px white, -2px -2px 5px 0px white;
+}
+
+.containerTraslate .content {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 100%;
+  height: 90px;
+}
+.containerTraslate .content .exampleContainer-transform {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  transition: transform 3s;
+}
+
+.exampleTraslate:active {
+  transform: translateX(120px);
+  background-color: red;
+}
+
+.codigo {
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.exampleScale:active {
+  transform: scaleX(3) scaleY(3);
+  background-color: red;
+}
+
+.exampleRotate:active {
+  transform: rotate(360deg);
+  background-color: red;
+}
+
+.exampleSkew:active {
+  background-color: red;
+  transform: skewX(30deg) skewY(90deg);
+}
+
+.examplePerspective:active {
+  transform: perspective(500px) rotateX(180deg);
+}
+
+/**********************************************************************/
+.exampleContainer-transitionProperty {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  transition-property: width;
+}
+
+.exampleContainer-transitionProperty:active {
+  width: 120px;
+  background-color: red;
+}
+
+.exampleContainer-transitionDuration {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  transition-property: width;
+  transition-duration: 3s;
+}
+
+.exampleContainer-transitionDuration:active {
+  width: 200px;
+  background-color: red;
+}
+
+.exampleContainer-transitionTimimng {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: ease;
+}
+
+.exampleContainer-transitionTimimng:active {
+  width: 200px;
+  background-color: red;
+}
+
+.exampleContainer-transitionDelay {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: ease;
+  transition-delay: 2s;
+}
+
+.exampleContainer-transitionDelay:active {
+  width: 200px;
+  background-color: red;
+}
+
+.exampleContainer-transitionAll {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  transition: width 3s ease 2s;
+}
+
+.exampleContainer-transitionAll:active {
+  width: 200px;
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */
